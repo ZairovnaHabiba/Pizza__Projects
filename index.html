@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza_Project</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="pizza">
+
+    <div class="container-xxl container-fluid">
+      
+      <div class="pizza__inner">
+        <h2 class="pizza__heading text-center py-5 m-0 mb-3">
+          Pitsa Buyurtma qilish!
+        </h2>
+
+        <div class="pizza__main row justify-content-around">
+          <form class="js-form col-11 col-md-10 col-lg-7 col-xl-5" id="form" action="https://echo.htmlacademy.ru" method="GET">
+
+            <!-- Noni qanday bo'lsin? -->
+            <div class="form__select-box p-4 mb-4 bg-light">
+              <label class="fw-bold mb-2 fs-5" for="form-select">
+                Noni qanday bo'lsin?
+              </label>
+              <select id="form-select" class="form__select js-select form-select" name="type_bread"></select>
+            </div>
+
+            <!-- Kattaligi -->
+            <fieldset class="form__radios-box js-form-radios p-4 mb-4
+            bg-light">
+              <legend class="fw-bold mb-4 fs-5">Kattaligi</legend>
+            </fieldset>
+
+            <!-- Ustiga nima solaylik -->
+            <fieldset class="form__checks-box p-4 mb-4 bg-light">
+              <legend class="fw-bold mb-2 fs-5">Ustiga nima solaylik</legend>
+              <ul class="js-form-checkboxes list-unstyled d-flex flex-wrap flex-column flex-sm-row"></ul>
+            </fieldset>
+
+            <!-- Qo'shimchalar -->
+            <fieldset class="form__checks-box p-4 mb-4 bg-light">
+              <legend class="fw-bold mb-2 fs-5">Qo'shimchalar</legend>
+              <ul class="js-form-checkboxes-extra list-unstyled d-flex flex-wrap  flex-column flex-sm-row"></ul>
+            </fieldset>
+          </form>
+
+          <!-- Results  -->
+          <div class="pizza__right col-11 col-md-10 col-lg-4 p-4 bg-light">
+            <div class="result w-100 mb-4">
+              <p class="result__bread fw-bold p-3">
+                Non: 
+                <span class="js-bread-type fw-normal text-success"></span>
+              </p>
+
+              <p class="result__size fw-bold p-3">
+                Kattaligi:  
+                <span class="js-pizza-size fw-normal text-success"></span>
+              </p>
+
+              <div class="result__top mb-3">
+                <p class="result__top-text fw-bold p-3 pb-1 m-0">Ustida:</p>
+                <ul class="result-list js-result__top-list text-success"></ul>
+              </div>
+
+              <div class="result__extra">
+                <p class="result__extra-text fw-bold p-3 pb-1 m-0">Qo'shimcha:</p>
+                <ul class="js-result__extra-list text-success"></ul>
+              </div>
+            </div>
+
+            <!-- Btn-Submit-Buyurtma-Berish -->
+            <button class="form-btn btn btn-danger" type="submit" form="form">Buyurtma berish</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

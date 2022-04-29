@@ -1,0 +1,76 @@
+
+  
+.form__select {
+    max-width: 300px;
+  }
+  
+.form__select-box, .form__radios-box, .form__checks-box {
+    border-radius: 20px;
+    box-shadow: -6px 5px 17px 0px rgba(34, 60, 80, 0.2);
+}
+  
+.pizza__right {
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: -6px 5px 17px 0px rgba(34, 60, 80, 0.2);
+}
+  
+  
+.result__bread, .result__size {
+    background-color:rgb(147 124 105 / 20%);
+    border-radius: 10px;
+}
+  
+.result__top {
+    min-height: 190px;
+    background-color: rgb(147 124 105 / 20%);
+    border-radius: 10px;
+}
+  
+.result__extra {
+    min-height: 100px;
+    background-color: rgb(147 124 105 / 20%);
+    border-radius: 10px;
+}
+  
+.radio-group {
+    display: inline;
+}
+.form__radio {
+    display: none;;
+}
+  
+.form__radio-label {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    line-height: 100px;
+    font-weight: 600;
+    margin-right: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+  
+.list-item {
+    width: 50%;
+}
+  
+.form__radio:checked ~ .form__radio-label{
+    color: #fff;
+    background-color: #000;
+}
+  
+@media only screen and (max-width: 534px){
+    .form__radio-label{
+      font-size: 15px;
+      line-height: 65px;
+      width: 65px;
+      height: 65px;
+      margin-right: 8px;
+    }
+    .list-item {
+      width: 100%;
+    }
+}
+
